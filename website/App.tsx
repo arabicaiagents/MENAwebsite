@@ -668,19 +668,12 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      // Load GHL form embed script
-      const script = document.createElement('script');
-      script.src = 'https://app.arabicaiagents.com/js/form_embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-
-      return () => {
-        document.body.style.overflow = 'unset';
-        document.body.removeChild(script);
-      };
     } else {
       document.body.style.overflow = 'unset';
     }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -708,23 +701,13 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
           <X size={24} />
         </button>
 
-        <div className="w-full h-[834px] overflow-y-auto">
+        <div className="w-full h-[90vh] overflow-y-auto">
           <iframe
             src="https://app.arabicaiagents.com/widget/form/XPMkv4zDIdbzBY7gxBIj"
-            style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
+            style={{ width: '100%', height: '100%', minHeight: '600px', border: 'none' }}
             id="inline-XPMkv4zDIdbzBY7gxBIj"
-            data-layout='{"id":"INLINE"}'
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Consultation"
-            data-height="834"
-            data-layout-iframe-id="inline-XPMkv4zDIdbzBY7gxBIj"
-            data-form-id="XPMkv4zDIdbzBY7gxBIj"
-            title="Consultation"
+            title="Book Consultation"
+            allowFullScreen
           />
         </div>
       </motion.div>
