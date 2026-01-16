@@ -174,6 +174,91 @@
     }
     .related-articles a:hover { text-decoration: underline; }
     strong { color: #1C69D4; }
+
+    /* Hero Image Section */
+    .hero-image {
+      width: calc(100% + 100px);
+      margin-left: -50px;
+      margin-right: -50px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      height: 400px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(102, 126, 234, 0.15);
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.08) 35px, rgba(255,255,255,0.08) 70px);
+      opacity: 0.5;
+    }
+
+    .hero-image::after {
+      content: '🎙️';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12em;
+      opacity: 0.25;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px 40px;
+      background: linear-gradient(to top, rgba(102, 126, 234, 0.9) 0%, transparent 100%);
+      color: white;
+    }
+
+    .hero-overlay h2 {
+      color: white;
+      font-size: 1.8em;
+      margin: 0 0 10px 0;
+      border: none;
+      padding: 0;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .hero-overlay p {
+      color: rgba(255,255,255,0.95);
+      font-size: 1.1em;
+      margin: 0;
+      max-width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-image {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+        margin-right: -25px;
+        height: 300px;
+      }
+
+      .hero-image::after {
+        font-size: 8em;
+      }
+
+      .hero-overlay h2 {
+        font-size: 1.3em;
+      }
+
+      .hero-overlay p {
+        font-size: 0.95em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -185,6 +270,14 @@
         By <span class="author">Zara Hunter</span> | Published January 16, 2025 | 10 min read
       </div>
     </header>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+      <div class="hero-overlay">
+        <h2>Master Arabic Voice AI Implementation</h2>
+        <p>Technical guide to building voice agents that understand Darija, Gulf, Egyptian, and Levantine dialects</p>
+      </div>
+    </div>
 
     <main>
       <p>
@@ -442,9 +535,28 @@
       <div class="related-articles">
         <h3>Related Articles</h3>
         <ul>
-          <li><a href="what-is-agentic-ai-mena.html">What is Agentic AI? Complete Guide for MENA Businesses</a></li>
-          <li><a href="darija-ai-challenges.html">Darija AI Challenges: Why Moroccan Arabic Requires Specialized Solutions</a></li>
+          <li><a href="what-is-agentic-ai-mena.html">🤖 What is Agentic AI? Complete Guide for MENA Businesses - Understanding autonomous AI systems</a></li>
+          <li><a href="darija-ai-challenges.html">🇲🇦 Darija AI Challenges - Why Moroccan Arabic requires specialized AI solutions</a></li>
+          <li><a href="real-estate/executive-guide-ai-transformation-mena-real-estate.html">🏢 Executive's Guide to AI in Real Estate - How MENA developers achieve 45% cost reduction</a></li>
         </ul>
+      </div>
+
+      <!-- Browse More Articles CTA -->
+      <div style="background: #F4F1DE; padding: 40px; border-radius: 12px; margin: 50px 0; text-align: center;">
+        <h3 style="color: #1C69D4; font-size: 1.8em; margin-bottom: 15px;">Explore More AI Insights for MENA</h3>
+        <p style="color: #666; font-size: 1.1em; margin-bottom: 25px;">Discover expert articles on AI automation, implementation guides, and industry-specific solutions for Middle East and North Africa.</p>
+        <a href="index.html" style="display: inline-block; background: #1C69D4; color: white; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: background 0.3s;">Browse All Articles</a>
+      </div>
+
+      <!-- Category Navigation -->
+      <div style="background: white; padding: 30px; border-radius: 12px; margin: 40px 0; border: 2px solid #E07A5F;">
+        <h3 style="color: #1C69D4; margin-top: 0; margin-bottom: 20px;">Explore by Category</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+          <a href="real-estate/" style="display: block; padding: 20px; background: #F4F1DE; border-radius: 8px; text-align: center; text-decoration: none; color: #2D3033; font-weight: 600; transition: all 0.3s;">🏢 Real Estate AI</a>
+          <a href="executive-education/" style="display: block; padding: 20px; background: #F4F1DE; border-radius: 8px; text-align: center; text-decoration: none; color: #2D3033; font-weight: 600; transition: all 0.3s;">🎓 Executive Education</a>
+          <a href="how-to-guides/" style="display: block; padding: 20px; background: #F4F1DE; border-radius: 8px; text-align: center; text-decoration: none; color: #2D3033; font-weight: 600; transition: all 0.3s;">⚙️ How-To Guides</a>
+          <a href="case-studies/" style="display: block; padding: 20px; background: #F4F1DE; border-radius: 8px; text-align: center; text-decoration: none; color: #2D3033; font-weight: 600; transition: all 0.3s;">📊 Case Studies</a>
+        </div>
       </div>
     </main>
 
@@ -454,6 +566,7 @@
       </p>
       <p style="margin-top: 20px;">
         <a href="https://arabicaiagents.com/" style="color: #1C69D4;">← Back to Arabic AI Agents</a> |
+        <a href="index.html" style="color: #1C69D4;">Blog</a> |
         <a href="mailto:salam@arabicaiagents.com" style="color: #1C69D4;">Contact</a>
       </p>
       <p style="margin-top: 20px; color: #999; font-size: 0.9em;">
