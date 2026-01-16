@@ -692,7 +692,7 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.95, opacity: 0, y: 20 }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-3xl relative z-10 overflow-hidden max-h-[95vh]"
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl relative z-10 max-h-[95vh] flex flex-col"
       >
         <button
           onClick={onClose}
@@ -701,10 +701,10 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
           <X size={24} />
         </button>
 
-        <div className="w-full h-[1100px] overflow-y-auto">
+        <div className="w-full flex-1 overflow-y-auto">
           <iframe
             src="https://app.arabicaiagents.com/widget/form/QrxnoU1QITVL2S7ZtI3u"
-            style={{ width: '100%', height: '1100px', border: 'none', borderRadius: '3px' }}
+            style={{ width: '100%', height: '1600px', border: 'none', borderRadius: '3px', display: 'block' }}
             id="inline-QrxnoU1QITVL2S7ZtI3u"
             data-layout='{"id":"INLINE"}'
             data-trigger-type="alwaysShow"
@@ -714,10 +714,11 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="Consultation"
-            data-height="1100"
+            data-height="1600"
             data-layout-iframe-id="inline-QrxnoU1QITVL2S7ZtI3u"
             data-form-id="QrxnoU1QITVL2S7ZtI3u"
             title="Consultation"
+            scrolling="yes"
           />
         </div>
       </motion.div>
