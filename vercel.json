@@ -1,6 +1,6 @@
 {
-  "buildCommand": "cd 'arabicaiagents-website (3)' && npm install && npm run build",
-  "outputDirectory": "arabicaiagents-website (3)/dist",
+  "buildCommand": "cd website && npm install && npm run build",
+  "outputDirectory": "website/dist",
   "cleanUrls": true,
   "trailingSlash": false
 }

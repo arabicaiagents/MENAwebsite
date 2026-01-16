@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd 'arabicaiagents-website (3)' && npm install && npm run build",
-    "dev": "cd 'arabicaiagents-website (3)' && npm run dev"
+    "build": "cd website && npm install && npm run build",
+    "dev": "cd website && npm run dev"
   }
 }
