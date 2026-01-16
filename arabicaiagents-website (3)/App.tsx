@@ -8,16 +8,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { DigitalMosaicScene, GlobalConnectionScene } from './components/QuantumScene';
 import { ExpenseScanner, VoiceAgentVisualizer, SEOMetrics, BridgingVisual, TypingEffect, CorporateTrainingVisualizer, IndividualEducationVisualizer } from './components/Diagrams';
 import { SEOContext } from './components/SEOContext';
-import { ArrowRight, Menu, X, Check, Mail, MapPin, Instagram, Linkedin, Globe, ChevronDown, Plus, Minus, Music, HelpCircle, PenTool, Calendar, Clock, ChevronLeft, ChevronRight, User, Building, ArrowLeft, CheckCircle, MessageCircle, Send, Cpu } from 'lucide-react';
+import { ArrowRight, Menu, X, Check, Mail, MapPin, Globe, ChevronDown, Plus, Minus, Music, HelpCircle, PenTool, Calendar, ChevronLeft, ChevronRight, User, Building, ArrowLeft, CheckCircle, MessageCircle, Cpu } from 'lucide-react';
 
 type Language = 'en' | 'fr' | 'ar';
-
-// Simple TikTok Icon component since it might not be in the lucide version used or for custom styling
-const TikTokIcon = ({ size = 18, className = "" }: { size?: number, className?: string }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-  </svg>
-);
 
 // Brand Logo Component
 const BrandLogo = ({ size = 40, className = "" }: { size?: number, className?: string }) => (
@@ -670,223 +663,69 @@ const translations = {
   }
 };
 
-// --- Booking Modal Component (Embed) ---
-const BookingModal = ({ isOpen, onClose, t, isRTL, lang }: { isOpen: boolean, onClose: () => void, t: any, isRTL: boolean, lang: Language }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    website: '',
-    enquiry: ''
-  });
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
-
+// --- Booking Modal Component (GHL Embed) ---
+const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      // Load GHL form embed script
+      const script = document.createElement('script');
+      script.src = 'https://app.arabicaiagents.com/js/form_embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.style.overflow = 'unset';
+        document.body.removeChild(script);
+      };
     } else {
       document.body.style.overflow = 'unset';
-      if (status === 'success') {
-         setTimeout(() => {
-             setStatus('idle');
-             setFormData({ name: '', email: '', website: '', enquiry: '' });
-         }, 500); 
-      }
     }
-    return () => { document.body.style.overflow = 'unset'; };
-  }, [isOpen, status]);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('submitting');
-    
-    try {
-        // Send to formsubmit.co which handles backend email sending without exposing API keys
-        const response = await fetch("https://formsubmit.co/ajax/aibdarijaaa@gmail.com", {
-            method: "POST",
-            headers: { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                name: formData.name,
-                email: formData.email,
-                website: formData.website || "Not provided",
-                message: formData.enquiry,
-                _subject: `New Enquiry from ${formData.name}`,
-                _captcha: "false"
-            })
-        });
-
-        if (response.ok) {
-            setStatus('success');
-        } else {
-            console.error("Form submission failed");
-            // Still show success to user to avoid frustration if it's just a CORS or network glitch on the response
-            setStatus('success');
-        }
-    } catch (error) {
-        console.error("Error submitting form:", error);
-        setStatus('success');
-    }
-  };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6" dir={isRTL ? 'rtl' : 'ltr'}>
-      <motion.div 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={onClose}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        onClick={onClose}
         className="absolute inset-0 bg-stone-900/60 backdrop-blur-sm"
       />
 
-      <motion.div 
+      <motion.div
         initial={{ scale: 0.95, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.95, opacity: 0, y: 20 }}
-        className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl relative z-10 overflow-hidden flex flex-col lg:flex-row max-h-[90vh]"
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-3xl relative z-10 overflow-hidden max-h-[90vh]"
       >
-        <button onClick={onClose} className="absolute top-4 right-4 z-20 p-2 bg-white/50 hover:bg-white rounded-full transition-colors text-stone-500 hover:text-stone-900">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-20 p-2 bg-white/80 hover:bg-white rounded-full transition-colors text-stone-500 hover:text-stone-900 shadow-lg"
+        >
           <X size={24} />
         </button>
 
-        {/* Left Panel */}
-        <div className="lg:w-1/3 bg-stone-50 p-8 border-r border-stone-100 hidden lg:block overflow-y-auto">
-           <div className="flex flex-col h-full justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-majorelle/10 text-majorelle flex items-center justify-center mb-6">
-                   <BrandLogo size={32} />
-                </div>
-                <h3 className={`text-2xl text-stone-900 font-bold mb-4 ${isRTL ? 'font-arabic' : 'font-serif'}`}>{t.booking.title}</h3>
-                <p className="text-stone-600 text-sm leading-relaxed mb-8">
-                  {t.booking.desc}
-                </p>
-                
-                <div className="space-y-6">
-                    <div>
-                        <div className="flex items-center gap-3 text-stone-900 font-bold text-sm mb-2">
-                            <Clock size={16} className="text-terracotta" />
-                            {t.booking.duration}
-                        </div>
-                        <div className="flex items-center gap-3 text-stone-900 font-bold text-sm">
-                            <div className="w-4 h-4 flex items-center justify-center"><div className="w-2 h-2 rounded-full bg-green-500"></div></div>
-                            {t.booking.type}
-                        </div>
-                    </div>
-                    
-                    <div className="pt-6 border-t border-stone-200">
-                         <div className="flex items-center gap-3 text-stone-600 mb-2 hover:text-majorelle transition-colors">
-                            <Mail size={16} />
-                            <span className="text-sm font-medium">salam@arabicaiagents.com</span>
-                         </div>
-                    </div>
-                </div>
-              </div>
-           </div>
-        </div>
-
-        {/* Right Panel: Form */}
-        <div className="lg:w-2/3 bg-white w-full h-full relative p-8 md:p-10 overflow-y-auto">
-             <AnimatePresence mode="wait">
-                 {status === 'success' ? (
-                     <motion.div 
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        className="h-full flex flex-col items-center justify-center text-center min-h-[400px]"
-                     >
-                        <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
-                            <Check size={40} strokeWidth={3} />
-                        </div>
-                        <h3 className={`text-3xl font-bold text-stone-900 mb-4 ${isRTL ? 'font-arabic' : 'font-serif'}`}>{t.booking.successTitle}</h3>
-                        <p className="text-stone-600 mb-8 text-lg max-w-md">{t.booking.successMsg}</p>
-                        <button 
-                            onClick={onClose}
-                            className="px-8 py-3 bg-stone-100 text-stone-900 rounded-full font-bold hover:bg-stone-200 transition-colors uppercase tracking-wide text-xs"
-                        >
-                            Close
-                        </button>
-                     </motion.div>
-                 ) : (
-                     <motion.form 
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onSubmit={handleSubmit} 
-                        className="space-y-6 max-w-lg mx-auto py-4"
-                     >
-                         <div className="lg:hidden mb-6">
-                            <h3 className={`text-2xl text-stone-900 font-bold mb-2 ${isRTL ? 'font-arabic' : 'font-serif'}`}>{t.booking.title}</h3>
-                            <p className="text-stone-500 text-sm">{t.booking.desc}</p>
-                         </div>
-
-                         <div>
-                            <label className={`block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2 ${isRTL ? 'font-arabic tracking-normal' : ''}`}>{t.booking.formName}</label>
-                            <input 
-                                required
-                                type="text" 
-                                value={formData.name}
-                                onChange={e => setFormData({...formData, name: e.target.value})}
-                                className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:border-majorelle focus:ring-4 focus:ring-majorelle/10 outline-none transition-all placeholder:text-stone-400"
-                                placeholder={isRTL ? "الاسم الكامل" : "Ex. Sarah Amrani"}
-                            />
-                         </div>
-
-                         <div>
-                            <label className={`block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2 ${isRTL ? 'font-arabic tracking-normal' : ''}`}>{t.booking.formEmail}</label>
-                            <input 
-                                required
-                                type="email" 
-                                value={formData.email}
-                                onChange={e => setFormData({...formData, email: e.target.value})}
-                                className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:border-majorelle focus:ring-4 focus:ring-majorelle/10 outline-none transition-all placeholder:text-stone-400"
-                                placeholder="name@company.com"
-                            />
-                         </div>
-
-                         <div>
-                            <label className={`block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2 ${isRTL ? 'font-arabic tracking-normal' : ''}`}>{t.booking.formWebsite}</label>
-                            <input 
-                                type="text" 
-                                value={formData.website}
-                                onChange={e => setFormData({...formData, website: e.target.value})}
-                                className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:border-majorelle focus:ring-4 focus:ring-majorelle/10 outline-none transition-all placeholder:text-stone-400"
-                                placeholder="https://yourcompany.com"
-                            />
-                         </div>
-
-                         <div>
-                            <label className={`block text-xs font-bold text-stone-500 uppercase tracking-wider mb-2 ${isRTL ? 'font-arabic tracking-normal' : ''}`}>{t.booking.formRequest}</label>
-                            <textarea 
-                                required
-                                rows={4}
-                                value={formData.enquiry}
-                                onChange={e => setFormData({...formData, enquiry: e.target.value})}
-                                className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:bg-white focus:border-majorelle focus:ring-4 focus:ring-majorelle/10 outline-none transition-all resize-none placeholder:text-stone-400"
-                                placeholder={isRTL ? "كيف يمكننا مساعدتك؟" : "Tell us about your project..."}
-                            />
-                         </div>
-
-                         <button 
-                            type="submit" 
-                            disabled={status === 'submitting'}
-                            className="w-full py-4 bg-stone-900 text-white rounded-xl font-bold tracking-wide uppercase hover:bg-majorelle transition-all shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2 group mt-4"
-                         >
-                            {status === 'submitting' ? (
-                                <>
-                                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                                    <span>Processing...</span>
-                                </>
-                            ) : (
-                                <>
-                                   {t.booking.confirm} <Send size={18} className={`transition-transform ${status === 'idle' ? 'group-hover:translate-x-1 group-hover:-translate-y-1' : ''}`} />
-                                </>
-                            )}
-                         </button>
-                     </motion.form>
-                 )}
-             </AnimatePresence>
+        <div className="w-full h-[834px] overflow-y-auto">
+          <iframe
+            src="https://app.arabicaiagents.com/widget/form/XPMkv4zDIdbzBY7gxBIj"
+            style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
+            id="inline-XPMkv4zDIdbzBY7gxBIj"
+            data-layout='{"id":"INLINE"}'
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Consultation"
+            data-height="834"
+            data-layout-iframe-id="inline-XPMkv4zDIdbzBY7gxBIj"
+            data-form-id="XPMkv4zDIdbzBY7gxBIj"
+            title="Consultation"
+          />
         </div>
       </motion.div>
     </div>
@@ -1553,20 +1392,6 @@ const App: React.FC = () => {
                              </div>
                          </div>
                      </div>
-                     <div>
-                         <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs mb-6">{t.footer.social}</h4>
-                         <div className="flex gap-4">
-                             <a href="https://www.instagram.com/arabicaiagents/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-majorelle hover:text-white transition-all">
-                                 <Instagram size={18} />
-                             </a>
-                             <a href="https://www.linkedin.com/in/zara-hunter-124558228/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-majorelle hover:text-white transition-all">
-                                 <Linkedin size={18} />
-                             </a>
-                             <a href="https://www.tiktok.com/@ai.darija?lang=en" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-majorelle hover:text-white transition-all">
-                                 <TikTokIcon size={18} />
-                             </a>
-                         </div>
-                     </div>
                  </div>
                  <div className="border-t border-stone-100 mt-16 pt-8 text-center text-xs text-stone-400">
                      <p>© 2026 Arabic AI Agents | Leading Agentic AI Consultant in MENA Region</p>
@@ -1579,7 +1404,7 @@ const App: React.FC = () => {
              </div>
         </footer>
 
-        <BookingModal isOpen={showBooking} onClose={() => setShowBooking(false)} t={t} isRTL={isRTL} lang={lang} />
+        <BookingModal isOpen={showBooking} onClose={() => setShowBooking(false)} />
 
         {/* LLM-Readable SEO Context (invisible to users) */}
         <SEOContext />
