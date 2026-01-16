@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://arabicaiagents.com/</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arabicaiagents.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arabicaiagents.com/"/>
+  </url>
+
+  <!-- English Version -->
+  <url>
+    <loc>https://arabicaiagents.com/en</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arabicaiagents.com/fr"/>
+  </url>
+
+  <!-- Arabic Version -->
+  <url>
+    <loc>https://arabicaiagents.com/ar</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arabicaiagents.com/fr"/>
+  </url>
+
+  <!-- French Version -->
+  <url>
+    <loc>https://arabicaiagents.com/fr</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arabicaiagents.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/ar"/>
+  </url>
+
+  <!-- Section Deep Links -->
+  <url>
+    <loc>https://arabicaiagents.com/#solutions</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arabicaiagents.com/#about</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://arabicaiagents.com/#faq</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://arabicaiagents.com/#contact</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

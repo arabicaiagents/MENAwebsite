@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DigitalMosaicScene, GlobalConnectionScene } from './components/QuantumScene';
 import { ExpenseScanner, VoiceAgentVisualizer, SEOMetrics, BridgingVisual, TypingEffect, CorporateTrainingVisualizer, IndividualEducationVisualizer } from './components/Diagrams';
+import { SEOContext } from './components/SEOContext';
 import { ArrowRight, Menu, X, Check, Mail, MapPin, Instagram, Linkedin, Globe, ChevronDown, Plus, Minus, Music, HelpCircle, PenTool, Calendar, Clock, ChevronLeft, ChevronRight, User, Building, ArrowLeft, CheckCircle, MessageCircle, Send, Cpu } from 'lucide-react';
 
 type Language = 'en' | 'fr' | 'ar';
@@ -934,9 +935,10 @@ const App: React.FC = () => {
 
   return (
     <div dir={isRTL ? 'rtl' : 'ltr'} className={`min-h-screen bg-sand text-charcoal selection:bg-majorelle selection:text-white overflow-x-hidden ${fontBody}`}>
-      
-      {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-sand/90 backdrop-blur-md shadow-sm py-3 border-b border-stone-200' : 'bg-transparent py-6'}`}>
+
+      {/* Header with Navigation */}
+      <header role="banner">
+        <nav role="navigation" aria-label="Main navigation" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-sand/90 backdrop-blur-md shadow-sm py-3 border-b border-stone-200' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <BrandLogo size={48} />
@@ -993,6 +995,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </nav>
+      </header>
 
       {/* Mobile Menu */}
       {menuOpen && (
@@ -1011,8 +1014,11 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* Hero Section */}
-      <header className="relative h-screen flex items-center overflow-hidden">
+      {/* Main Content */}
+      <main role="main" id="main-content">
+
+        {/* Hero Section */}
+        <section id="hero" aria-labelledby="hero-heading" className="relative h-screen flex items-center overflow-hidden">
         <DigitalMosaicScene />
         
         <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -1020,11 +1026,11 @@ const App: React.FC = () => {
             <div className={`inline-block mb-6 px-4 py-1 border border-terracotta text-terracotta text-xs tracking-[0.2em] uppercase font-bold rounded-full bg-white/50 backdrop-blur-sm ${isRTL ? 'tracking-normal' : ''}`}>
                {t.hero.badge}
             </div>
-            <h1 className={`${fontHeader} text-5xl md:text-7xl font-medium leading-tight mb-6 text-stone-900`}>
+            <h1 id="hero-heading" className={`${fontHeader} text-5xl md:text-7xl font-medium leading-tight mb-6 text-stone-900`}>
               {<TypingEffect text={t.hero.titlePre} speed={40} className="block" hideCursorOnComplete={true} />}
               <span className="text-majorelle italic block">{<TypingEffect text={t.hero.titlePost} delay={1.5} speed={40} hideCursorOnComplete={true} />}</span>
             </h1>
-            <p className="text-lg md:text-xl text-stone-600 leading-relaxed mb-10 max-w-lg">
+            <p itemProp="description" className="text-lg md:text-xl text-stone-600 leading-relaxed mb-10 max-w-lg">
               {t.hero.desc}
             </p>
             
@@ -1044,16 +1050,15 @@ const App: React.FC = () => {
              <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-stone-400 to-transparent mx-auto mb-2"></div>
              <span className="text-[10px] uppercase tracking-widest">{t.hero.scroll}</span>
         </div>
-      </header>
+        </section>
 
-      <main>
         {/* Mission Statement */}
-        <section id="mission" className="py-24 bg-white pattern-grid">
+        <section id="mission" aria-labelledby="mission-heading" className="py-24 bg-white pattern-grid">
           <div className="container mx-auto px-6">
             <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center lg:text-left">
-                         <h2 className={`${fontHeader} text-3xl md:text-5xl mb-8 text-stone-900`}>{t.mission.title}</h2>
+                         <h2 id="mission-heading" className={`${fontHeader} text-3xl md:text-5xl mb-8 text-stone-900`}>{t.mission.title}</h2>
                           <div className={`w-24 h-1 bg-terracotta mb-10 ${isRTL ? 'ml-auto lg:mr-0' : 'mx-auto lg:mx-0'}`}></div>
                           <p className="text-xl md:text-2xl text-stone-600 leading-relaxed font-light">
                             "{t.mission.text}"
@@ -1522,7 +1527,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Footer */}
-        <footer className="bg-white border-t border-stone-200 py-16">
+        <footer role="contentinfo" className="bg-white border-t border-stone-200 py-16">
              <div className="container mx-auto px-6">
                  <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                      <div>
@@ -1564,12 +1569,20 @@ const App: React.FC = () => {
                      </div>
                  </div>
                  <div className="border-t border-stone-100 mt-16 pt-8 text-center text-xs text-stone-400">
-                     {t.footer.rights}
+                     <p>© 2026 Arabic AI Agents | Leading Agentic AI Consultant in MENA Region</p>
+                     <nav aria-label="Footer navigation" className="flex justify-center gap-6 mt-4">
+                       <a href="https://github.com/arabicaiagents" rel="noopener noreferrer" target="_blank" aria-label="Visit our GitHub profile" className="hover:text-majorelle transition-colors">
+                         GitHub Projects
+                       </a>
+                     </nav>
                  </div>
              </div>
         </footer>
 
         <BookingModal isOpen={showBooking} onClose={() => setShowBooking(false)} t={t} isRTL={isRTL} lang={lang} />
+
+        {/* LLM-Readable SEO Context (invisible to users) */}
+        <SEOContext />
 
       </main>
     </div>

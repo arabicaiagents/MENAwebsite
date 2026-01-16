@@ -1,0 +1,36 @@
+# Robots.txt for Arabic AI Agents - Agentic AI Consultant MENA
+User-agent: *
+Allow: /
+Allow: /en
+Allow: /ar
+Allow: /fr
+Sitemap: https://arabicaiagents.com/sitemap.xml
+
+# Allow AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block common scrapers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
