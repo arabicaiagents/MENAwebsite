@@ -1,0 +1,13 @@
+# Redirect blog article URLs without /blog/ prefix to correct location
+/what-is-agentic-ai-mena.html           /blog/what-is-agentic-ai-mena.html           301
+/arabic-ai-voice-agents-guide.html      /blog/arabic-ai-voice-agents-guide.html      301
+/darija-ai-challenges.html              /blog/darija-ai-challenges.html              301
+/what-is-agentic-ai-mena                /blog/what-is-agentic-ai-mena.html           301
+/arabic-ai-voice-agents-guide           /blog/arabic-ai-voice-agents-guide.html      301
+/darija-ai-challenges                   /blog/darija-ai-challenges.html              301
+
+# Real estate subdirectory
+/real-estate/*                          /blog/real-estate/:splat                     301
+
+# Catch-all for SPA - serve index.html for all other routes
+/*                                      /index.html                                  200

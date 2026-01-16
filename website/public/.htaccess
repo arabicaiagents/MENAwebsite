@@ -1,0 +1,24 @@
+# Enable rewrite engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirect blog articles without /blog/ prefix
+  RewriteRule ^what-is-agentic-ai-mena\.html$ /blog/what-is-agentic-ai-mena.html [R=301,L]
+  RewriteRule ^arabic-ai-voice-agents-guide\.html$ /blog/arabic-ai-voice-agents-guide.html [R=301,L]
+  RewriteRule ^darija-ai-challenges\.html$ /blog/darija-ai-challenges.html [R=301,L]
+  RewriteRule ^what-is-agentic-ai-mena$ /blog/what-is-agentic-ai-mena.html [R=301,L]
+  RewriteRule ^arabic-ai-voice-agents-guide$ /blog/arabic-ai-voice-agents-guide.html [R=301,L]
+  RewriteRule ^darija-ai-challenges$ /blog/darija-ai-challenges.html [R=301,L]
+
+  # Redirect real-estate subdirectory
+  RewriteRule ^real-estate/(.*)$ /blog/real-estate/$1 [R=301,L]
+
+  # Don't rewrite files or directories that exist
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Serve index.html for all other routes (SPA fallback)
+  RewriteRule ^ index.html [L]
+</IfModule>
