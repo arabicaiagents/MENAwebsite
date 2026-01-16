@@ -809,7 +809,7 @@ const App: React.FC = () => {
             <a href="#mission" onClick={scrollToSection('mission')} className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.mission}</a>
             <a href="#solutions" onClick={scrollToSection('solutions')} className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.solutions}</a>
             <a href="#founder" onClick={scrollToSection('founder')} className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.founder}</a>
-            <a href="#blog" onClick={scrollToSection('blog')} className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.blog}</a>
+            <a href="/blog/" className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.blog}</a>
             <a href="#faq" onClick={scrollToSection('faq')} className="hover:text-majorelle transition-colors cursor-pointer uppercase">{t.nav.faq}</a>
             <button 
               onClick={openBooking}
@@ -845,7 +845,7 @@ const App: React.FC = () => {
             <a href="#mission" onClick={scrollToSection('mission')}>{t.nav.mission}</a>
             <a href="#solutions" onClick={scrollToSection('solutions')}>{t.nav.solutions}</a>
             <a href="#founder" onClick={scrollToSection('founder')}>{t.nav.founder}</a>
-            <a href="#blog" onClick={scrollToSection('blog')}>{t.nav.blog}</a>
+            <a href="/blog/">{t.nav.blog}</a>
             <a href="#faq" onClick={scrollToSection('faq')}>{t.nav.faq}</a>
             <button 
               onClick={openBooking}
