@@ -701,13 +701,23 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
           <X size={24} />
         </button>
 
-        <div className="w-full h-[90vh] overflow-y-auto">
+        <div className="w-full h-[888px] overflow-y-auto">
           <iframe
-            src="https://app.arabicaiagents.com/widget/form/XPMkv4zDIdbzBY7gxBIj"
-            style={{ width: '100%', height: '100%', minHeight: '600px', border: 'none' }}
-            id="inline-XPMkv4zDIdbzBY7gxBIj"
-            title="Book Consultation"
-            allowFullScreen
+            src="https://app.arabicaiagents.com/widget/form/QrxnoU1QITVL2S7ZtI3u"
+            style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
+            id="inline-QrxnoU1QITVL2S7ZtI3u"
+            data-layout='{"id":"INLINE"}'
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Consultation"
+            data-height="888"
+            data-layout-iframe-id="inline-QrxnoU1QITVL2S7ZtI3u"
+            data-form-id="QrxnoU1QITVL2S7ZtI3u"
+            title="Consultation"
           />
         </div>
       </motion.div>
