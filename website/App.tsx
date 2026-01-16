@@ -125,26 +125,29 @@ const translations = {
     },
     blog: {
       title: "Latest Insights",
-      subtitle: "Expert analysis on the future of work in Morocco.",
+      subtitle: "Expert analysis on agentic AI and Arabic language technology for MENA businesses.",
       readMore: "Read Article",
       articles: [
         {
-          title: "Why Moroccan Businesses Are Switching to AI",
-          date: "Oct 24, 2023",
-          category: "Business",
-          excerpt: "From automation to customer service, discover how local SMEs are cutting costs by 40% with intelligent agents."
+          title: "What is Agentic AI? Complete Guide for MENA Businesses",
+          date: "Jan 16, 2025",
+          category: "Agentic AI",
+          excerpt: "Comprehensive guide to agentic AI for Middle East and North African businesses. Learn how autonomous AI agents transform operations with 40% conversion increases.",
+          url: "/blog/what-is-agentic-ai-mena.html"
         },
         {
-          title: "The Rise of Darija-Speaking Bots",
-          date: "Nov 02, 2023",
-          category: "Technology",
-          excerpt: "How natural language processing is finally cracking the code on Moroccan dialect for seamless interactions."
+          title: "Arabic AI Voice Agents: Complete Implementation Guide",
+          date: "Jan 16, 2025",
+          category: "Technical",
+          excerpt: "Build Arabic AI voice agents that understand Darija, Gulf, Egyptian, and Levantine dialects. Technical guide covering ASR, NLU, TTS, and cultural adaptation.",
+          url: "/blog/arabic-ai-voice-agents-guide.html"
         },
         {
-          title: "Casablanca: The Next Tech Hub?",
-          date: "Nov 15, 2023",
-          category: "Economy",
-          excerpt: "Investment in digital infrastructure is paving the way for a new era of innovation across North Africa."
+          title: "Darija AI Challenges: Why Moroccan Arabic Needs Specialized Solutions",
+          date: "Jan 16, 2025",
+          category: "Language AI",
+          excerpt: "Why standard Arabic AI fails for Darija and how specialized solutions achieve 90%+ accuracy for Moroccan businesses. Native speaker perspective.",
+          url: "/blog/darija-ai-challenges.html"
         }
       ]
     },
@@ -334,26 +337,29 @@ const translations = {
     },
     blog: {
       title: "Dernières Actualités",
-      subtitle: "Analyses expertes sur l'avenir du travail au Maroc.",
+      subtitle: "Analyses expertes sur l'IA agentique et les technologies linguistiques arabes pour les entreprises MENA.",
       readMore: "Lire l'article",
       articles: [
         {
-          title: "Pourquoi les entreprises marocaines passent à l'IA",
-          date: "24 Oct 2023",
-          category: "Affaires",
-          excerpt: "De l'automatisation au service client, découvrez comment les PME locales réduisent leurs coûts grâce aux agents intelligents."
+          title: "Qu'est-ce que l'IA Agentique ? Guide Complet pour les Entreprises MENA",
+          date: "16 Jan 2025",
+          category: "IA Agentique",
+          excerpt: "Guide complet sur l'IA agentique pour les entreprises du Moyen-Orient et d'Afrique du Nord. Découvrez comment les agents IA autonomes transforment les opérations.",
+          url: "/blog/what-is-agentic-ai-mena.html"
         },
         {
-          title: "L'essor des bots parlant Darija",
-          date: "02 Nov 2023",
-          category: "Technologie",
-          excerpt: "Comment le traitement du langage naturel décrypte enfin le dialecte marocain pour des interactions fluides."
+          title: "Agents Vocaux IA Arabes : Guide d'Implémentation Complet",
+          date: "16 Jan 2025",
+          category: "Technique",
+          excerpt: "Créez des agents vocaux IA qui comprennent le Darija, l'arabe du Golfe, égyptien et levantin. Guide technique couvrant ASR, NLU, TTS et adaptation culturelle.",
+          url: "/blog/arabic-ai-voice-agents-guide.html"
         },
         {
-          title: "Casablanca : Le prochain Hub Tech ?",
-          date: "15 Nov 2023",
-          category: "Économie",
-          excerpt: "L'investissement dans l'infrastructure numérique ouvre la voie à une nouvelle ère d'innovation en Afrique du Nord."
+          title: "Défis de l'IA en Darija : Pourquoi l'Arabe Marocain Nécessite des Solutions Spécialisées",
+          date: "16 Jan 2025",
+          category: "IA Linguistique",
+          excerpt: "Pourquoi l'IA arabe standard échoue pour le Darija et comment les solutions spécialisées atteignent plus de 90% de précision. Perspective d'un locuteur natif.",
+          url: "/blog/darija-ai-challenges.html"
         }
       ]
     },
@@ -543,26 +549,29 @@ const translations = {
     },
     blog: {
       title: "آخر المستجدات",
-      subtitle: "تحليلات الخبراء حول مستقبل العمل في المغرب.",
+      subtitle: "تحليلات الخبراء حول الذكاء الاصطناعي الوكيل والتكنولوجيا اللغوية العربية لشركات منطقة الشرق الأوسط وشمال إفريقيا.",
       readMore: "اقرأ المقال",
       articles: [
         {
-          title: "لماذا تتحول الشركات المغربية إلى الذكاء الاصطناعي",
-          date: "24 أكتوبر 2023",
-          category: "أعمال",
-          excerpt: "من الأتمتة إلى خدمة العملاء، اكتشف كيف تخفض الشركات الصغيرة والمتوسطة تكاليفها بنسبة 40% باستخدام الوكلاء الأذكياء."
+          title: "ما هو الذكاء الاصطناعي الوكيل؟ دليل شامل لشركات منطقة الشرق الأوسط وشمال إفريقيا",
+          date: "16 يناير 2025",
+          category: "ذكاء اصطناعي وكيل",
+          excerpt: "دليل شامل للذكاء الاصطناعي الوكيل لشركات الشرق الأوسط وشمال إفريقيا. تعلم كيف تحول الوكلاء المستقلون العمليات بزيادة 40% في التحويلات.",
+          url: "/blog/what-is-agentic-ai-mena.html"
         },
         {
-          title: "صعود الروبوتات الناطقة بالدارجة",
-          date: "02 نوفمبر 2023",
-          category: "تكنولوجيا",
-          excerpt: "كيف تمكنت معالجة اللغة الطبيعية أخيراً من فهم اللهجة المغربية بطلاقة لتفاعلات سلسة."
+          title: "وكلاء الصوت بالذكاء الاصطناعي العربي: دليل التنفيذ الكامل",
+          date: "16 يناير 2025",
+          category: "تقني",
+          excerpt: "بناء وكلاء صوت ذكاء اصطناعي يفهمون الدارجة والعربية الخليجية والمصرية والشامية. دليل تقني يغطي التعرف على الكلام والفهم والتوليف الصوتي.",
+          url: "/blog/arabic-ai-voice-agents-guide.html"
         },
         {
-          title: "الدار البيضاء: مركز التكنولوجيا القادم؟",
-          date: "15 نوفمبر 2023",
-          category: "اقتصاد",
-          excerpt: "الاستثمار في البنية التحتية الرقمية يمهد الطريق لعصر جديد من الابتكار في جميع أنحاء شمال إفريقيا."
+          title: "تحديات الذكاء الاصطناعي بالدارجة: لماذا تحتاج الدارجة المغربية لحلول متخصصة",
+          date: "16 يناير 2025",
+          category: "ذكاء لغوي",
+          excerpt: "لماذا يفشل الذكاء الاصطناعي العربي القياسي مع الدارجة وكيف تحقق الحلول المتخصصة دقة تزيد عن 90%. منظور متحدث أصلي.",
+          url: "/blog/darija-ai-challenges.html"
         }
       ]
     },
@@ -1291,9 +1300,9 @@ const App: React.FC = () => {
                               <p className="text-stone-600 text-sm leading-relaxed mb-6 line-clamp-3">
                                   {article.excerpt}
                               </p>
-                              <button className="text-majorelle font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn hover:text-majorelle-dark transition-colors">
+                              <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-majorelle font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn hover:text-majorelle-dark transition-colors">
                                   {t.blog.readMore} <ArrowRight size={14} className={`transition-transform ${isRTL ? 'rotate-180 group-hover/btn:-translate-x-1' : 'group-hover/btn:translate-x-1'}`} />
-                              </button>
+                              </a>
                           </div>
                        </article>
                     )
