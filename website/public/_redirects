@@ -53,8 +53,21 @@
 /blog-ar                                /blog/index-ar.html                          301
 /blog-ar.html                           /blog/index-ar.html                          301
 
-# Redirect real estate articles without full path
+# Redirect category shortcuts (when accessed from root without /blog/ prefix)
+/real-estate                            /blog/real-estate/                           301
+/real-estate/                           /blog/real-estate/                           301
+/executive-education                    /blog/executive-education/                   301
+/executive-education/                   /blog/executive-education/                   301
+/how-to-guides                          /blog/how-to-guides/                         301
+/how-to-guides/                         /blog/how-to-guides/                         301
+/case-studies                           /blog/case-studies/                          301
+/case-studies/                          /blog/case-studies/                          301
+
+# Redirect category article paths without /blog/ prefix
 /real-estate/*                          /blog/real-estate/:splat                     301
+/executive-education/*                  /blog/executive-education/:splat             301
+/how-to-guides/*                        /blog/how-to-guides/:splat                   301
+/case-studies/*                         /blog/case-studies/:splat                    301
 
 # Catch-all for SPA - serve index.html for all other routes (MUST BE LAST)
 /*                                      /index.html                                  200
