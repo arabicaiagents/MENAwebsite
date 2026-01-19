@@ -42,4 +42,38 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Arabic Blog Index -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/index-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Arabic Blog Articles -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/what-is-agentic-ai-mena-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/arabic-ai-voice-agents-guide-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/darija-ai-challenges-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/real-estate/executive-guide-ai-transformation-mena-real-estate-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
