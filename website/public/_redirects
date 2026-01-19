@@ -90,6 +90,8 @@
 /ai-training-banks-uae                                           /blog/executive-education/banking-executives-ai-training-uae.html               301
 
 # Redirect Arabic blog index shortcuts
+/index-ar                               /blog/index-ar.html                          301
+/index-ar.html                          /blog/index-ar.html                          301
 /blog-ar                                /blog/index-ar.html                          301
 /blog-ar.html                           /blog/index-ar.html                          301
 
