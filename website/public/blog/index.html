@@ -100,6 +100,36 @@
       color: white !important;
     }
 
+    /* Language Toggle */
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: #f5f5f5;
+      padding: 4px;
+      border-radius: 6px;
+    }
+
+    .lang-toggle a {
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-weight: 600;
+      text-decoration: none;
+      color: #666;
+      transition: all 0.3s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--majorelle);
+      color: white;
+    }
+
+    .lang-toggle a:hover:not(.active) {
+      background: #e5e5e5;
+      color: var(--charcoal);
+    }
+
     /* Hero Section */
     .hero {
       background: linear-gradient(135deg, var(--majorelle) 0%, #155ab3 100%);
@@ -531,6 +561,10 @@
     <div class="header-container">
       <a href="https://arabicaiagents.com/" class="logo">Arabic AI Agents</a>
       <nav class="nav-links">
+        <div class="lang-toggle">
+          <a href="index.html" class="active">EN</a>
+          <a href="index-ar.html">AR</a>
+        </div>
         <a href="../#solutions">Solutions</a>
         <a href="index.html">Blog</a>
         <a href="../#about">About</a>
