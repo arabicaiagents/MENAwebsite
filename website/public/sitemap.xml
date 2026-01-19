@@ -120,6 +120,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/blog/executive-education/what-is-agentic-ai-mena.html" />
   </url>
 
+  <!-- Executive Training Guide (English) - HIGH PRIORITY SEO -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena-ar.html" />
+  </url>
+
+  <!-- Executive Training Guide (Arabic) - HIGH PRIORITY SEO -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena-ar.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena-ar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena.html" />
+  </url>
+
   <!-- Category: How-To Guides (English) -->
   <url>
     <loc>https://arabicaiagents.com/blog/how-to-guides/</loc>
