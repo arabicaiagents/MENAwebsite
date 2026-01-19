@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Real Estate AI | AI Automation for Property Developers in MENA | Arabic AI Agents</title>
+  <meta name="title" content="Real Estate AI | AI Automation for Property Developers in MENA">
+  <meta name="description" content="AI automation for property developers and management firms across MENA. Expert guidance on real estate AI transformation from Zara Hunter, delivering 45% cost reduction and 60% faster sales cycles.">
+  <meta name="keywords" content="real estate AI MENA, property management AI Dubai, real estate automation Morocco, AI consultant real estate, property tech Middle East, real estate AI Saudi Arabia">
+  <meta name="author" content="Zara Hunter, Arabic AI Agents">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arabicaiagents.com/blog/real-estate/">
+  <meta property="og:title" content="Real Estate AI | AI Automation for Property Developers in MENA">
+  <meta property="og:description" content="AI automation for property developers and management firms across MENA.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://arabicaiagents.com/blog/real-estate/">
+
+  <style>
+    :root {
+      --majorelle: #1C69D4;
+      --terracotta: #E07A5F;
+      --sand: #F4F1DE;
+      --charcoal: #2D3033;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: var(--majorelle);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--charcoal);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95em;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--majorelle);
+    }
+
+    .cta-btn {
+      background: var(--majorelle);
+      color: white !important;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .cta-btn:hover {
+      background: #155ab3;
+      color: white !important;
+    }
+
+    /* Language Toggle */
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: #f5f5f5;
+      padding: 4px;
+      border-radius: 6px;
+    }
+
+    .lang-toggle a {
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-weight: 600;
+      text-decoration: none;
+      color: #666;
+      transition: all 0.3s;
+    }
+
+    .lang-toggle a.active {
+      background: var(--majorelle);
+      color: white;
+    }
+
+    .lang-toggle a:hover:not(.active) {
+      background: #e5e5e5;
+      color: var(--charcoal);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--majorelle) 0%, #155ab3 100%);
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .hero-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+
+    .breadcrumb a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .category-icon {
+      font-size: 4em;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      opacity: 0.95;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    /* Main Content */
+    .content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 40px;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--terracotta);
+    }
+
+    /* Article Grid */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .article-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    .article-image {
+      height: 240px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-image::after {
+      content: attr(data-icon);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5em;
+      opacity: 0.4;
+    }
+
+    .article-content {
+      padding: 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--terracotta);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.75em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+      width: fit-content;
+    }
+
+    .article-content h3 {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .article-content h3 a {
+      color: var(--charcoal);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .article-content h3 a:hover {
+      color: var(--majorelle);
+    }
+
+    .meta {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 15px;
+    }
+
+    .article-content p {
+      color: #666;
+      font-size: 0.98em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--majorelle);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05em;
+      transition: gap 0.3s;
+    }
+
+    .read-more:hover {
+      gap: 12px;
+    }
+
+    /* Back to Blog */
+    .back-to-blog {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .back-to-blog a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--majorelle);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      padding: 12px 24px;
+      border: 2px solid var(--majorelle);
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    .back-to-blog a:hover {
+      background: var(--majorelle);
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--charcoal);
+      color: white;
+      padding: 60px 40px 40px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 40px;
+    }
+
+    .footer-about h3 {
+      color: var(--terracotta);
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+
+    .footer-about p {
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--terracotta);
+    }
+
+    .footer-bottom {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .articles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+      }
+
+      .articles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="https://arabicaiagents.com/" class="logo">Arabic AI Agents</a>
+      <nav class="nav-links">
+        <div class="lang-toggle">
+          <a href="index.html" class="active">EN</a>
+          <a href="index-ar.html">AR</a>
+        </div>
+        <a href="../../#solutions">Solutions</a>
+        <a href="../index.html">Blog</a>
+        <a href="../../#about">About</a>
+        <a href="../../#contact" class="cta-btn">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="breadcrumb">
+        <a href="../index.html">Blog</a>
+        <span>→</span>
+        <span>Real Estate AI</span>
+      </div>
+      <span class="category-icon">🏢</span>
+      <h1>Real Estate AI</h1>
+      <p>AI automation for property developers and management firms across MENA</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <section>
+      <h2 class="section-title">Articles in Real Estate AI</h2>
+      <div class="articles-grid">
+
+        <article class="article-card">
+          <div class="article-image" data-icon="🏗️"></div>
+          <div class="article-content">
+            <span class="badge">Executive Guide</span>
+            <h3><a href="executive-guide-ai-transformation-mena-real-estate.html">The Executive's Guide to AI Transformation in MENA Real Estate</a></h3>
+            <div class="meta">
+              <span>January 16, 2025</span>
+              <span>•</span>
+              <span>12 min read</span>
+            </div>
+            <p>Comprehensive guide for real estate executives on achieving 45% cost reduction and 60% faster sales cycles through AI automation across Morocco, UAE, and Saudi Arabia.</p>
+            <a href="executive-guide-ai-transformation-mena-real-estate.html" class="read-more">
+              Read Article
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="back-to-blog">
+      <a href="../index.html">
+        <span>←</span>
+        Back to All Articles
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>Arabic AI Agents</h3>
+        <p>Leading AI consulting firm specializing in agentic AI solutions for MENA businesses. Expert in Arabic voice agents, automation, and executive training across Morocco, UAE, and Saudi Arabia.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://arabicaiagents.com/">Home</a></li>
+          <li><a href="https://arabicaiagents.com/#solutions">Solutions</a></li>
+          <li><a href="../index.html">Blog</a></li>
+          <li><a href="https://arabicaiagents.com/#about">About</a></li>
+          <li><a href="https://arabicaiagents.com/#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/arabicaiagents">GitHub</a></li>
+          <li><a href="mailto:salam@arabicaiagents.com">Email</a></li>
+          <li><a href="https://arabicaiagents.com/">Website</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Arabic AI Agents. All rights reserved. | Crafted with care for MENA business leaders.
+    </div>
+  </footer>
+
+</body>
+</html>
