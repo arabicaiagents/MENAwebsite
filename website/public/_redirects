@@ -4,21 +4,37 @@
 # Real estate subdirectory - serve directly
 /blog/real-estate/*                     /blog/real-estate/:splat                     200
 
-# Redirect blog article URLs without /blog/ prefix to correct location
-/what-is-agentic-ai-mena.html           /blog/what-is-agentic-ai-mena.html           301
-/arabic-ai-voice-agents-guide.html      /blog/arabic-ai-voice-agents-guide.html      301
-/darija-ai-challenges.html              /blog/darija-ai-challenges.html              301
-/what-is-agentic-ai-mena                /blog/what-is-agentic-ai-mena.html           301
-/arabic-ai-voice-agents-guide           /blog/arabic-ai-voice-agents-guide.html      301
-/darija-ai-challenges                   /blog/darija-ai-challenges.html              301
+# Redirect old blog article URLs to new category locations (English)
+/blog/what-is-agentic-ai-mena.html              /blog/executive-education/what-is-agentic-ai-mena.html              301
+/blog/what-is-agentic-ai-mena                   /blog/executive-education/what-is-agentic-ai-mena.html              301
+/what-is-agentic-ai-mena.html                   /blog/executive-education/what-is-agentic-ai-mena.html              301
+/what-is-agentic-ai-mena                        /blog/executive-education/what-is-agentic-ai-mena.html              301
 
-# Redirect Arabic blog article URLs without /blog/ prefix to correct location
-/what-is-agentic-ai-mena-ar.html        /blog/what-is-agentic-ai-mena-ar.html        301
-/arabic-ai-voice-agents-guide-ar.html   /blog/arabic-ai-voice-agents-guide-ar.html   301
-/darija-ai-challenges-ar.html           /blog/darija-ai-challenges-ar.html           301
-/what-is-agentic-ai-mena-ar             /blog/what-is-agentic-ai-mena-ar.html        301
-/arabic-ai-voice-agents-guide-ar        /blog/arabic-ai-voice-agents-guide-ar.html   301
-/darija-ai-challenges-ar                /blog/darija-ai-challenges-ar.html           301
+/blog/arabic-ai-voice-agents-guide.html         /blog/how-to-guides/arabic-ai-voice-agents-guide.html               301
+/blog/arabic-ai-voice-agents-guide              /blog/how-to-guides/arabic-ai-voice-agents-guide.html               301
+/arabic-ai-voice-agents-guide.html              /blog/how-to-guides/arabic-ai-voice-agents-guide.html               301
+/arabic-ai-voice-agents-guide                   /blog/how-to-guides/arabic-ai-voice-agents-guide.html               301
+
+/blog/darija-ai-challenges.html                 /blog/case-studies/darija-ai-challenges.html                        301
+/blog/darija-ai-challenges                      /blog/case-studies/darija-ai-challenges.html                        301
+/darija-ai-challenges.html                      /blog/case-studies/darija-ai-challenges.html                        301
+/darija-ai-challenges                           /blog/case-studies/darija-ai-challenges.html                        301
+
+# Redirect old blog article URLs to new category locations (Arabic)
+/blog/what-is-agentic-ai-mena-ar.html           /blog/executive-education/what-is-agentic-ai-mena-ar.html           301
+/blog/what-is-agentic-ai-mena-ar                /blog/executive-education/what-is-agentic-ai-mena-ar.html           301
+/what-is-agentic-ai-mena-ar.html                /blog/executive-education/what-is-agentic-ai-mena-ar.html           301
+/what-is-agentic-ai-mena-ar                     /blog/executive-education/what-is-agentic-ai-mena-ar.html           301
+
+/blog/arabic-ai-voice-agents-guide-ar.html      /blog/how-to-guides/arabic-ai-voice-agents-guide-ar.html            301
+/blog/arabic-ai-voice-agents-guide-ar           /blog/how-to-guides/arabic-ai-voice-agents-guide-ar.html            301
+/arabic-ai-voice-agents-guide-ar.html           /blog/how-to-guides/arabic-ai-voice-agents-guide-ar.html            301
+/arabic-ai-voice-agents-guide-ar                /blog/how-to-guides/arabic-ai-voice-agents-guide-ar.html            301
+
+/blog/darija-ai-challenges-ar.html              /blog/case-studies/darija-ai-challenges-ar.html                     301
+/blog/darija-ai-challenges-ar                   /blog/case-studies/darija-ai-challenges-ar.html                     301
+/darija-ai-challenges-ar.html                   /blog/case-studies/darija-ai-challenges-ar.html                     301
+/darija-ai-challenges-ar                        /blog/case-studies/darija-ai-challenges-ar.html                     301
 
 # Redirect Arabic blog index shortcuts
 /blog-ar                                /blog/index-ar.html                          301

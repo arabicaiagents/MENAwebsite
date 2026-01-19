@@ -12,35 +12,68 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://arabicaiagents.com/blog/what-is-agentic-ai-mena.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://arabicaiagents.com/blog/arabic-ai-voice-agents-guide.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://arabicaiagents.com/blog/darija-ai-challenges.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Blog Main Index -->
   <url>
     <loc>https://arabicaiagents.com/blog/</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Category: Real Estate AI -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/real-estate/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://arabicaiagents.com/blog/real-estate/executive-guide-ai-transformation-mena-real-estate.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Category: Executive Education -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/what-is-agentic-ai-mena.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Category: How-To Guides -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/how-to-guides/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/how-to-guides/arabic-ai-voice-agents-guide.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Category: Case Studies -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/case-studies/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/case-studies/darija-ai-challenges.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Arabic Blog Index -->
@@ -51,29 +84,55 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Arabic Category Index Pages -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/real-estate/index-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/index-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/how-to-guides/index-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/case-studies/index-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Arabic Blog Articles -->
-  <url>
-    <loc>https://arabicaiagents.com/blog/what-is-agentic-ai-mena-ar.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://arabicaiagents.com/blog/arabic-ai-voice-agents-guide-ar.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://arabicaiagents.com/blog/darija-ai-challenges-ar.html</loc>
-    <lastmod>2025-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
   <url>
     <loc>https://arabicaiagents.com/blog/real-estate/executive-guide-ai-transformation-mena-real-estate-ar.html</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/what-is-agentic-ai-mena-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/how-to-guides/arabic-ai-voice-agents-guide-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arabicaiagents.com/blog/case-studies/darija-ai-challenges-ar.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
