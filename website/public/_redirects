@@ -73,6 +73,14 @@
 /agentic-ai-guide-executives-ar.html                             /blog/executive-education/agentic-ai-guide-non-technical-executives-mena-ar.html 301
 /agentic-ai-guide-executives-ar                                  /blog/executive-education/agentic-ai-guide-non-technical-executives-mena-ar.html 301
 
+# Redirect executive AI training FAQ
+/blog/executive-ai-faq.html                                      /blog/executive-education/executive-ai-training-faq-mena.html                   301
+/blog/executive-ai-faq                                           /blog/executive-education/executive-ai-training-faq-mena.html                   301
+/executive-ai-faq.html                                           /blog/executive-education/executive-ai-training-faq-mena.html                   301
+/executive-ai-faq                                                /blog/executive-education/executive-ai-training-faq-mena.html                   301
+/ai-training-faq                                                 /blog/executive-education/executive-ai-training-faq-mena.html                   301
+/executive-training-faq                                          /blog/executive-education/executive-ai-training-faq-mena.html                   301
+
 # Redirect Arabic blog index shortcuts
 /blog-ar                                /blog/index-ar.html                          301
 /blog-ar.html                           /blog/index-ar.html                          301

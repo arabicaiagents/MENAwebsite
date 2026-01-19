@@ -140,6 +140,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://arabicaiagents.com/blog/executive-education/agentic-ai-guide-non-technical-executives-mena.html" />
   </url>
 
+  <!-- Executive AI Training FAQ - HIGH PRIORITY SEO -->
+  <url>
+    <loc>https://arabicaiagents.com/blog/executive-education/executive-ai-training-faq-mena.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <!-- Category: How-To Guides (English) -->
   <url>
     <loc>https://arabicaiagents.com/blog/how-to-guides/</loc>
