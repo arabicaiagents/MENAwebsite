@@ -1,8 +1,21 @@
+# Serve blog category index pages
+/blog/real-estate                       /blog/real-estate/index.html                 200
+/blog/real-estate/                      /blog/real-estate/index.html                 200
+/blog/executive-education               /blog/executive-education/index.html         200
+/blog/executive-education/              /blog/executive-education/index.html         200
+/blog/how-to-guides                     /blog/how-to-guides/index.html               200
+/blog/how-to-guides/                    /blog/how-to-guides/index.html               200
+/blog/case-studies                      /blog/case-studies/index.html                200
+/blog/case-studies/                     /blog/case-studies/index.html                200
+
 # Serve blog files directly (prevent catch-all from catching these)
 /blog/*                                 /blog/:splat                                 200
 
 # Real estate subdirectory - serve directly
 /blog/real-estate/*                     /blog/real-estate/:splat                     200
+/blog/executive-education/*             /blog/executive-education/:splat             200
+/blog/how-to-guides/*                   /blog/how-to-guides/:splat                   200
+/blog/case-studies/*                    /blog/case-studies/:splat                    200
 
 # Redirect old blog article URLs to new category locations (English)
 /blog/what-is-agentic-ai-mena.html              /blog/executive-education/what-is-agentic-ai-mena.html              301
