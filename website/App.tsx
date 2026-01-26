@@ -712,7 +712,7 @@ const BookingModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
 
         <div className="w-full flex-1 overflow-y-auto">
           <iframe
-            src="https://app.arabicaiagents.com/widget/form/QrxnoU1QITVL2S7ZtI3u"
+            src="https://go.arabicaiagents.com/widget/form/QrxnoU1QITVL2S7ZtI3u?notrack=true"
             style={{ width: '100%', height: '1600px', border: 'none', borderRadius: '3px', display: 'block' }}
             id="inline-QrxnoU1QITVL2S7ZtI3u"
             data-layout='{"id":"INLINE"}'
