@@ -133,21 +133,21 @@ const translations = {
           date: "Jan 16, 2025",
           category: "Agentic AI",
           excerpt: "Comprehensive guide to agentic AI for Middle East and North African businesses. Learn how autonomous AI agents transform operations with 40% conversion increases.",
-          url: "/blog/what-is-agentic-ai-mena.html"
+          url: "/blog/executive-education/what-is-agentic-ai-mena.html"
         },
         {
           title: "Arabic AI Voice Agents: Complete Implementation Guide",
           date: "Jan 16, 2025",
           category: "Technical",
           excerpt: "Build Arabic AI voice agents that understand Darija, Gulf, Egyptian, and Levantine dialects. Technical guide covering ASR, NLU, TTS, and cultural adaptation.",
-          url: "/blog/arabic-ai-voice-agents-guide.html"
+          url: "/blog/how-to-guides/arabic-ai-voice-agents-guide.html"
         },
         {
           title: "Darija AI Challenges: Why Moroccan Arabic Needs Specialized Solutions",
           date: "Jan 16, 2025",
           category: "Language AI",
           excerpt: "Why standard Arabic AI fails for Darija and how specialized solutions achieve 90%+ accuracy for Moroccan businesses. Native speaker perspective.",
-          url: "/blog/darija-ai-challenges.html"
+          url: "/blog/case-studies/darija-ai-challenges.html"
         }
       ]
     },
@@ -345,21 +345,21 @@ const translations = {
           date: "16 Jan 2025",
           category: "IA Agentique",
           excerpt: "Guide complet sur l'IA agentique pour les entreprises du Moyen-Orient et d'Afrique du Nord. Découvrez comment les agents IA autonomes transforment les opérations.",
-          url: "/blog/what-is-agentic-ai-mena.html"
+          url: "/blog/executive-education/what-is-agentic-ai-mena.html"
         },
         {
           title: "Agents Vocaux IA Arabes : Guide d'Implémentation Complet",
           date: "16 Jan 2025",
           category: "Technique",
           excerpt: "Créez des agents vocaux IA qui comprennent le Darija, l'arabe du Golfe, égyptien et levantin. Guide technique couvrant ASR, NLU, TTS et adaptation culturelle.",
-          url: "/blog/arabic-ai-voice-agents-guide.html"
+          url: "/blog/how-to-guides/arabic-ai-voice-agents-guide.html"
         },
         {
           title: "Défis de l'IA en Darija : Pourquoi l'Arabe Marocain Nécessite des Solutions Spécialisées",
           date: "16 Jan 2025",
           category: "IA Linguistique",
           excerpt: "Pourquoi l'IA arabe standard échoue pour le Darija et comment les solutions spécialisées atteignent plus de 90% de précision. Perspective d'un locuteur natif.",
-          url: "/blog/darija-ai-challenges.html"
+          url: "/blog/case-studies/darija-ai-challenges.html"
         }
       ]
     },
@@ -557,21 +557,21 @@ const translations = {
           date: "16 يناير 2025",
           category: "ذكاء اصطناعي وكيل",
           excerpt: "دليل شامل للذكاء الاصطناعي الوكيل لشركات الشرق الأوسط وشمال إفريقيا. تعلم كيف تحول الوكلاء المستقلون العمليات بزيادة 40% في التحويلات.",
-          url: "/blog/what-is-agentic-ai-mena.html"
+          url: "/blog/executive-education/what-is-agentic-ai-mena.html"
         },
         {
           title: "وكلاء الصوت بالذكاء الاصطناعي العربي: دليل التنفيذ الكامل",
           date: "16 يناير 2025",
           category: "تقني",
           excerpt: "بناء وكلاء صوت ذكاء اصطناعي يفهمون الدارجة والعربية الخليجية والمصرية والشامية. دليل تقني يغطي التعرف على الكلام والفهم والتوليف الصوتي.",
-          url: "/blog/arabic-ai-voice-agents-guide.html"
+          url: "/blog/how-to-guides/arabic-ai-voice-agents-guide.html"
         },
         {
           title: "تحديات الذكاء الاصطناعي بالدارجة: لماذا تحتاج الدارجة المغربية لحلول متخصصة",
           date: "16 يناير 2025",
           category: "ذكاء لغوي",
           excerpt: "لماذا يفشل الذكاء الاصطناعي العربي القياسي مع الدارجة وكيف تحقق الحلول المتخصصة دقة تزيد عن 90%. منظور متحدث أصلي.",
-          url: "/blog/darija-ai-challenges.html"
+          url: "/blog/case-studies/darija-ai-challenges.html"
         }
       ]
     },
